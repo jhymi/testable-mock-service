@@ -1,7 +1,6 @@
 # Deno Boilerplate
 
-This is a boilerplate project for building applications using Deno. It includes a basic structure with essential files to get started.
-
+This project is intended to work as a mock service for running integration tests against an application. It provides endpoints to simulate URL paths and HTTP methods, allowing you to test your application's behavior without needing a real backend service.
 ## Project Structure
 
 ```
@@ -15,20 +14,14 @@ deno-boilerplate
 
 ## Setup Instructions
 
-1. Ensure you have Deno installed on your machine. You can download it from [deno.land](https://deno.land/).
-2. Clone this repository to your local machine.
-3. Navigate to the project directory.
-4. Install dependencies by running:
-   ```
-   deno run --allow-net deps.ts
-   ```
+1. Ensure you have docker installed on your machine.
+2. Run the following to start the application:
 
-## Usage
+```bash
+docker-compose up --build
+```
+3. Access the application at `http://localhost:8000`.
 
-To run the application, execute the following command:
-```
-deno run --allow-net src/main.ts
-```
 
 ## Contributing
 
